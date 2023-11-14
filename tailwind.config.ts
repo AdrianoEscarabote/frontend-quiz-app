@@ -21,7 +21,7 @@ const config: Config = {
         dark_gray: "#3B4D66",
         gray: "#626C7F",
         light_gray: "#ABC1E1",
-        almost_white: "F4F6FA",
+        almost_white: "#F4F6FA",
         green: "#26D782",
       },
     },
