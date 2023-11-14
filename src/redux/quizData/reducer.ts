@@ -1,6 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
-import { QuizState, setQuizCategoryType } from "./quizDataTypes";
-import { Quiz } from "./quizDataTypes";
+import { QuizState, setQuizCategoryType } from "@/redux/quizData/quizDataTypes";
+import { Quiz } from "@/redux/quizData/quizDataTypes";
 
 const initialState: QuizState = {
   quizzes: [],
