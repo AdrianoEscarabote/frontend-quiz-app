@@ -1,0 +1,37 @@
+.input {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 48px;
+  height: 28px;
+  background: #a729f5;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+.label:after {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.input:checked + .label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.label:active:after {
+  width: 32px;
+}
