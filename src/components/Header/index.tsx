@@ -6,13 +6,12 @@ import CategoryTag from "../CategoryTag";
 
 const Header = ({ showCategory }: HeaderProps) => {
   const { title } = useSelector((state: RootState) => {
-    console.log(state.quizSlice);
     return state.quizSlice;
   });
 
   return (
     <header className="w-full max-w-[1440px] flex justify-between items-center">
-      <CategoryTag showCategory={showCategory} title={title} />
+      <CategoryTag showCategory={showCategory} title={title as any} />
 
       <div className="flex justify-end w-full">
         <ToggleThemeButton />
