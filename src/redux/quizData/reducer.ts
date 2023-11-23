@@ -27,9 +27,28 @@ const quizSlice = createSlice({
       const { option } = action.payload;
       state.optionsChosen.push(option);
     },
+    calculate: (state) => {
+      let number = 0;
+      state.quizzes[0].questions.map((quest) =>
+        state.optionsChosen.includes(quest.answer) ? number++ : null
+      ).length;
+      state.numberCorrectOptions = number;
+    },
+    resetQuiz: (state) => {
+      state.numberCorrectOptions = 0;
+      state.optionsChosen = [];
+      state.title = "";
+      state.quizzes = [];
+    },
   },
 });
 
-export const { setQuizzes, setCategory, setOptionsChosen } = quizSlice.actions;
+export const {
+  setQuizzes,
+  setCategory,
+  setOptionsChosen,
+  calculate,
+  resetQuiz,
+} = quizSlice.actions;
 
 export default quizSlice.reducer;
