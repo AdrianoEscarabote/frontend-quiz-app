@@ -1,10 +1,6 @@
-interface Option {
-  value: string;
-}
-
 interface Question {
   question: string;
-  options: Option[];
+  options: string[];
   answer: string;
 }
 
@@ -20,6 +16,12 @@ interface setQuizCategoryType {
 interface QuizState {
   quizzes: Quiz[];
   title: string;
+  optionsChosen: string[];
+  numberCorrectOptions: number;
+}
+
+interface setOptionsChosenType {
+  option: string;
 }
 
 interface RootState {
@@ -28,4 +30,4 @@ interface RootState {
 
 export { RootState };
 
-export { Option, Question, Quiz, QuizState, setQuizCategoryType };
+export { Question, Quiz, QuizState, setQuizCategoryType, setOptionsChosenType };
