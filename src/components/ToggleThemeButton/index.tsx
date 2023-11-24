@@ -22,14 +22,15 @@ const ToggleThemeButton = () => {
   }, []);
 
   return (
-    <div className="flex items-center gap-4">
+    <div className={`${style.container} flex items-center gap-4`}>
       <Image
         src={
           darkIcon ? "/assets/icon-sun-light.svg" : "/assets/icon-sun-dark.svg"
         }
         width={24}
         height={24}
-        alt=""
+        alt="icon sun"
+        className={`${style.icon}`}
       />
       <input
         className={`${style.input}`}
@@ -48,7 +49,8 @@ const ToggleThemeButton = () => {
         }
         width={24}
         height={24}
-        alt=""
+        alt="icon moon"
+        className={`${style.icon}`}
       />
     </div>
   );
