@@ -1,0 +1,23 @@
+@media (max-width: 48rem) {
+  .container {
+    height: auto !important;
+    gap: 1.5rem;
+    max-width: unset !important;
+  }
+  .wrapper_loadingBar {
+    margin-bottom: unset !important;
+  }
+  .details {
+    margin-bottom: 0.75rem !important;
+    font-size: 0.875rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 150%;
+  }
+  .question {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+  }
+}
