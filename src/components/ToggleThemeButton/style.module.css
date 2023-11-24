@@ -35,3 +35,24 @@
 .label:active:after {
   width: 32px;
 }
+
+@media (max-width: 48rem) {
+  .container {
+    gap: 0.5rem;
+  }
+  .label {
+    width: 2rem;
+    height: 1.25rem;
+  }
+  .label:after {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+  .label:active:after {
+    width: 1.125rem;
+  }
+  .icon {
+    width: 1rem;
+    height: 1rem;
+  }
+}
