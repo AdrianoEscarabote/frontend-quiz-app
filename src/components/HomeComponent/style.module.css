@@ -1,0 +1,12 @@
+@media (max-width: 64rem) {
+  .main {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 48rem) {
+  .main {
+    padding: 1rem 1.5rem !important;
+    gap: 1.75rem;
+  }
+}
