@@ -1,0 +1,33 @@
+@media (max-width: 48rem) {
+  .h1 span {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 100%;
+  }
+  .spanBold {
+    font-weight: 500 !important;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+  }
+  .wrapperScore {
+    max-width: unset !important;
+  }
+  .score {
+    display: grid;
+    place-content: center;
+    font-size: 5.5rem;
+    font-weight: 500;
+    line-height: 100%;
+  }
+  .button {
+    height: 3.5rem;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 100%;
+    border-radius: 0.75rem;
+    max-width: unset !important;
+  }
+}
