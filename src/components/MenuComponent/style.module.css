@@ -1,0 +1,22 @@
+@media (max-width: 768px) {
+  .container {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 668px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .wrapper_quiz {
+    align-items: center;
+  }
+
+  .wrapper_quiz button {
+    max-width: unset !important;
+  }
+}
