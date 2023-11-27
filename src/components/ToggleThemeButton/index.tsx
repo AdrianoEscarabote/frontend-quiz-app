@@ -11,7 +11,7 @@ const ToggleThemeButton = () => {
     const themeToggle = document.getElementById("switch");
 
     const handleToggleClick = () => {
-      document.body.classList.toggle("dark-theme");
+      document.body.classList.toggle("light-theme");
     };
 
     themeToggle?.addEventListener("click", handleToggleClick);
@@ -26,12 +26,12 @@ const ToggleThemeButton = () => {
     if (!home) {
       return;
     }
-    if (document.body.classList.contains("dark-theme")) {
-      home.classList.add("dark-bg");
-      home.classList.remove("light-bg");
-    } else {
+    if (document.body.classList.contains("light-theme")) {
       home.classList.add("light-bg");
       home.classList.remove("dark-bg");
+    } else {
+      home.classList.add("dark-bg");
+      home.classList.remove("light-bg");
     }
   }, [darkIcon]);
 

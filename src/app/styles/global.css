@@ -154,12 +154,12 @@ select {
 }
 
 :root {
-  --body-color: #f4f6fa;
-  --text-color: #313e51;
-  --multiple-selection-color: #fff;
-  --quiz-category-color: #fff;
-  --text-color2: #626c7f;
-  --text-error: #ee5454;
+  --body-color: #313e51;
+  --text-color: #fff;
+  --multiple-selection-color: #3b4d66;
+  --quiz-category-color: #3b4d66;
+  --text-color2: #abc1e1;
+  --text-error: #f4f6fa;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -173,13 +173,13 @@ select {
   }
 }
 
-.dark-theme {
-  --body-color: #313e51;
-  --text-color: #fff;
-  --multiple-selection-color: #3b4d66;
-  --quiz-category-color: #3b4d66;
-  --text-color2: #abc1e1;
-  --text-error: #f4f6fa;
+.light-theme {
+  --body-color: #f4f6fa;
+  --text-color: #313e51;
+  --multiple-selection-color: #fff;
+  --quiz-category-color: #fff;
+  --text-color2: #626c7f;
+  --text-error: #ee5454;
 }
 
 .multiple-selection-color {
