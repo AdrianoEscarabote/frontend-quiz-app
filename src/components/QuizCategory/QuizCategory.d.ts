@@ -1,5 +1,5 @@
 interface QuizCategoryProps {
-  title: "HTML" | "CSS" | "Javascript" | "Accessibility";
+  title: "HTML" | "CSS" | "JavaScript" | "Accessibility";
   goToQuestion: () => void;
 }
 

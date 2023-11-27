@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { Question, RootState } from "@/redux/quizData/quizDataTypes";
 import { useEffect, useState } from "react";
 import QuizQuestion from "../QuizQuestion";
+import style from "./style.module.css";
 
 const QuestionComponent = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -24,8 +25,8 @@ const QuestionComponent = () => {
       {loading ? (
         <div></div>
       ) : (
-        <div className="grid grid-cols-2 w-full">
-          <div>
+        <div className={`${style.container} grid grid-cols-2 w-full`}>
+          <div className={`${style.wrapper_questions}`}>
             {currentQuestionIndex < questions.length && (
               <QuestionDetails
                 questionTitle={`${questions[currentQuestionIndex].question}`}
@@ -33,7 +34,7 @@ const QuestionComponent = () => {
               />
             )}
           </div>
-          <div className="flex flex-col relative">
+          <div className="flex flex-col relative items-end">
             <QuizQuestion
               currentQuestionIndex={currentQuestionIndex}
               setCurrentQuestionIndex={setCurrentQuestionIndex}

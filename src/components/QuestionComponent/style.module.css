@@ -1,0 +1,11 @@
+@media (max-width: 48rem) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    max-width: unset !important;
+    gap: 4rem;
+  }
+  .wrapper_questions {
+    height: auto !important;
+  }
+}

@@ -56,12 +56,12 @@ const QuizCategory = ({ title, goToQuestion }: QuizCategoryProps) => {
           <p>HTML</p>
         </>
       ) : null}
-      {title === "Javascript" ? (
+      {title === "JavaScript" ? (
         <>
           <div className="w-14 h-14 rounded-lg bg-[#EBF0FF] flex items-center justify-center">
             <Image src={"/assets/icon-js.svg"} width={40} height={40} alt="" />
           </div>
-          <p>Javascript</p>
+          <p>JavaScript</p>
         </>
       ) : null}
     </button>
