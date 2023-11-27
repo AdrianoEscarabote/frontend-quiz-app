@@ -1,0 +1,14 @@
+@media (max-width: 48rem) {
+  .container {
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+  .button {
+    max-width: unset !important;
+    height: 3.5rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+  }
+}
