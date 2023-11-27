@@ -21,6 +21,20 @@ const ToggleThemeButton = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const home = document.querySelector("main");
+    if (!home) {
+      return;
+    }
+    if (document.body.classList.contains("dark-theme")) {
+      home.classList.add("dark-bg");
+      home.classList.remove("light-bg");
+    } else {
+      home.classList.add("light-bg");
+      home.classList.remove("dark-bg");
+    }
+  }, [darkIcon]);
+
   return (
     <div className={`${style.container} flex items-center gap-4`}>
       <Image

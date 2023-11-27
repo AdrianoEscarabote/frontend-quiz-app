@@ -119,6 +119,40 @@ select {
   line-height: 150%;
 }
 
+.dark-bg {
+  background: url("/assets/pattern-background-desktop-dark.svg") no-repeat
+    center;
+}
+
+.light-bg {
+  background: url("/assets/pattern-background-desktop-light.svg") no-repeat
+    center;
+}
+
+@media (max-width: 64rem) {
+  .dark-bg {
+    background: url("/assets/pattern-background-tablet-dark.svg") no-repeat top
+      left;
+  }
+
+  .light-bg {
+    background: url("/assets/pattern-background-tablet-light.svg") no-repeat top
+      left;
+  }
+}
+
+@media (max-width: 26.5625rem) {
+  .dark-bg {
+    background: url("/assets/pattern-background-mobile-dark.svg") no-repeat top
+      left;
+  }
+
+  .light-bg {
+    background: url("/assets/pattern-background-mobile-light.svg") no-repeat top
+      left;
+  }
+}
+
 :root {
   --body-color: #f4f6fa;
   --text-color: #313e51;
